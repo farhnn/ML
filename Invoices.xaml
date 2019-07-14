@@ -111,7 +111,7 @@
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <ui:MicrosoftOCR FilterRegion="{x:Null}" Text="{x:Null}" DisplayName="Microsoft OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="MicrosoftOCR_1" Image="[Image]" Language="en" Profile="Legacy" Scale="1" />
+                  <ui:MicrosoftOCR FilterRegion="{x:Null}" Text="{x:Null}" DisplayName="Microsoft OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="MicrosoftOCR_1" Image="[Image]" Language="en" Profile="Legacy" Scale="2" />
                 </ActivityFunc>
               </uiad:DigitizeDocument.OCREngine>
             </uiad:DigitizeDocument>
@@ -121,42 +121,42 @@
                 <umad:MachineLearningExtractor DisplayName="Machine learning extractor" Endpoint="https://invoices.uipath.com" sap:VirtualizedContainerService.HintSize="200,22.4" sap2010:WorkflowViewState.IdRef="MachineLearningExtractor_2" PersistenceId="UI5d46729a6a7d48bc99d6104abad30f29" RetryOnFailure="True">
                   <umad:MachineLearningExtractor.DocumentBounds>
                     <InArgument x:TypeArguments="udcr:ResultsDocumentBounds">
-                      <DelegateArgumentValue x:TypeArguments="udcr:ResultsDocumentBounds" sap2010:WorkflowViewState.IdRef="DelegateArgumentValue`1_2">
+                      <DelegateArgumentValue x:TypeArguments="udcr:ResultsDocumentBounds">
                         <DelegateInArgument x:TypeArguments="udcr:ResultsDocumentBounds" Name="DocumentBounds" />
                       </DelegateArgumentValue>
                     </InArgument>
                   </umad:MachineLearningExtractor.DocumentBounds>
                   <umad:MachineLearningExtractor.DocumentObjectModel>
                     <InArgument x:TypeArguments="udcd:Document">
-                      <DelegateArgumentValue x:TypeArguments="udcd:Document" sap2010:WorkflowViewState.IdRef="DelegateArgumentValue`1_4">
+                      <DelegateArgumentValue x:TypeArguments="udcd:Document">
                         <DelegateInArgument x:TypeArguments="udcd:Document" Name="DocumentObjectModel" />
                       </DelegateArgumentValue>
                     </InArgument>
                   </umad:MachineLearningExtractor.DocumentObjectModel>
                   <umad:MachineLearningExtractor.DocumentPath>
                     <InArgument x:TypeArguments="x:String">
-                      <DelegateArgumentValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="DelegateArgumentValue`1_5">
+                      <DelegateArgumentValue x:TypeArguments="x:String">
                         <DelegateInArgument x:TypeArguments="x:String" Name="DocumentPath" />
                       </DelegateArgumentValue>
                     </InArgument>
                   </umad:MachineLearningExtractor.DocumentPath>
                   <umad:MachineLearningExtractor.DocumentText>
                     <InArgument x:TypeArguments="x:String">
-                      <DelegateArgumentValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="DelegateArgumentValue`1_3">
+                      <DelegateArgumentValue x:TypeArguments="x:String">
                         <DelegateInArgument x:TypeArguments="x:String" Name="DocumentText" />
                       </DelegateArgumentValue>
                     </InArgument>
                   </umad:MachineLearningExtractor.DocumentText>
                   <umad:MachineLearningExtractor.ExtractorDocumentType>
                     <InArgument x:TypeArguments="udcd1:ExtractorDocumentType">
-                      <DelegateArgumentValue x:TypeArguments="udcd1:ExtractorDocumentType" sap2010:WorkflowViewState.IdRef="DelegateArgumentValue`1_1">
+                      <DelegateArgumentValue x:TypeArguments="udcd1:ExtractorDocumentType">
                         <DelegateInArgument x:TypeArguments="udcd1:ExtractorDocumentType" Name="ExtractorDocumentType" />
                       </DelegateArgumentValue>
                     </InArgument>
                   </umad:MachineLearningExtractor.ExtractorDocumentType>
                   <umad:MachineLearningExtractor.ExtractorResult>
                     <OutArgument x:TypeArguments="udcd1:ExtractorResult">
-                      <DelegateArgumentReference x:TypeArguments="udcd1:ExtractorResult" sap2010:WorkflowViewState.IdRef="DelegateArgumentReference`1_1">
+                      <DelegateArgumentReference x:TypeArguments="udcd1:ExtractorResult">
                         <DelegateOutArgument x:TypeArguments="udcd1:ExtractorResult" Name="ExtractorResult" />
                       </DelegateArgumentReference>
                     </OutArgument>
